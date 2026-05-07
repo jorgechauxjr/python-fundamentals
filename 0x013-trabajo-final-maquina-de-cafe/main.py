@@ -1,4 +1,5 @@
 from menu import mostrar_menu
+from pedidos import pedir_cafe
 
 def main():
     while(True):
@@ -6,7 +7,7 @@ def main():
         option = input("Selecciona una opción: ")
 
         if option == "1":
-            # pedir café
+            pedir_cafe()
             pass
         elif option == "2":
             # ver el historial
