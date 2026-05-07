@@ -1,4 +1,10 @@
-ARCHIVO_PEDIDOS = "pedidoss.txt"
+import os
+
+# 1. Obtenemos la ruta de la carpeta donde vive este script
+DIRECTORIO_ACTUAL = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Unimos esa ruta con el nombre del archivo
+ARCHIVO_PEDIDOS = os.path.join(DIRECTORIO_ACTUAL, "pedidos.txt")
 
 def pedir_cafe():
     print("\nElige el café que prefieras: ")
