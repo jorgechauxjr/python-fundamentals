@@ -16,6 +16,8 @@ def ver_historial():
                 for i, pedido in enumerate(pedidos, start=1):
                     print(f"{i} {pedido.strip()}")
                     # print(str(i) + "." + pedido.strip())
+            else:
+                print("Aún no hay ningún pedido!")
     except FileNotFoundError:
         print("\nTodavía no existe un historial de pedidos")
 
