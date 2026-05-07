@@ -1,0 +1,21 @@
+from menu import mostrar_menu
+
+def main():
+    while(True):
+        mostrar_menu()
+        option = input("Selecciona una opción: ")
+
+        if option == "1":
+            # pedir café
+            pass
+        elif option == "2":
+            # ver el historial
+            pass
+        elif option == "3":
+            print("\n Muchas gracias por haber tomado nuestros cafés")
+            break
+        else:
+            print("Opcion invalida, por favor indique una de las opciones sugeridas")
+
+if __name__ == "__main__":
+    main()
